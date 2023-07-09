@@ -8,7 +8,7 @@ function Header() {
   return (
     <Container>
       <a>
-        <img src="logo.svg" alt="" />
+        <img src="/tesla/logo.svg" alt="" />
       </a>
       <Menu>
         <a href="#">Model S</a>
@@ -24,7 +24,7 @@ function Header() {
           <a href="#">Tesla Account</a>
         </RightBar>
         <CustomMenu onClick={() => setBurgerStatus(true)}>
-          <span>Menu</span>
+          <span>MENU</span>
         </CustomMenu>
       </RightMenu>
       <BurgerNav show={burgerStatus}>

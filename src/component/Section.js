@@ -23,7 +23,7 @@ function Section({
             <LeftButton>{leftBtnText}</LeftButton>
             {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
           </ButtonGroup>
-          <DownArrow src="down-arrow.svg" />
+          <DownArrow src="/tesla/down-arrow.svg" />
         </Fade>
       </Buttons>
     </Wrap>

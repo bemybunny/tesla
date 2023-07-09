@@ -8,47 +8,47 @@ function Home() {
        <Section 
             title="Model S"
             description="Order Online for Touchless Delivery"
-            background_image="model-s.jpg"
+            background_image="/tesla/model-s.jpg"
             leftBtnText="Custom Order"
             rightBtnText="Existing Inventory"
        />
        <Section
             title="Model Y"
             description="Order Online for Touchless Delivery"
-            background_image="model-y.jpg"
+            background_image="/tesla/model-y.jpg"
             leftBtnText="Custom Order"
             rightBtnText="Existing Inventory" />
        <Section 
             title="Model 3"
             description="Order Online for Touchless Delivery"
-            background_image="model-3.jpg"
+            background_image="/tesla/model-3.jpg"
             leftBtnText="Custom Order"
             rightBtnText="Existing Inventory"
        />
        <Section
             title="Model X"
             description="Order Online for Touchless Delivery"
-            background_image="model-x.jpg"
+            background_image="/tesla/model-x.jpg"
             leftBtnText="Custom Order"
             rightBtnText="Existing Inventory" />
        <Section
             title="Solar Pannels"
             description="Schedule a Virtual Consultation"
-            background_image="solar-panel.jpg"
+            background_image="/tesla/solar-panel.jpg"
             leftBtnText="Order Now"
             rightBtnText="Learn More"
        />
        <Section
             title="Solar Roofs"
             description="Produce Clean Energy From Your Roof"
-            background_image="solar-roof.jpg"
+            background_image="/tesla/solar-roof.jpg"
             leftBtnText="Order Now"
             rightBtnText="Learn More"
        />
         <Section
             title="Powerwall"
             description=""
-            background_image="powerwall.webp"
+            background_image="/tesla/powerwall.webp"
             leftBtnText="Order Now"
             rightBtnText="Learn More"
        />
