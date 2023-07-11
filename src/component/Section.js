@@ -1,6 +1,6 @@
 import React from "react";
-import styled from "styled-components";
 import Fade from "react-reveal/Fade";
+import './section.css'
 
 function Section({
   title,
@@ -10,79 +10,28 @@ function Section({
   description,
 }) {
   return (
-    <Wrap bgImage={background_image}>
+
+    <div className="wrap" style={{ backgroundImage: `url(${  background_image})` }}>
       <Fade bottom>
-        <ItemText>
+        <div className="itemText">
           <span>{title}</span>
           <p>{description}</p>
-        </ItemText>
+        </div>
       </Fade>
-      <Buttons>
+      <div className="Buttons">
         <Fade bottom>
-          <ButtonGroup>
-            <LeftButton>{leftBtnText}</LeftButton>
-            {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
-          </ButtonGroup>
-          <DownArrow src="/tesla/down-arrow.svg" />
+          <div className="buttonGroup">
+            <div className="leftBtn">{leftBtnText}</div>
+            {rightBtnText && <div className="rightBtn">{rightBtnText}</div>}
+          </div>
+          <div className="downArrow" >
+              <img  src="down-arrow.svg" alt=""/>
+          </div>
         </Fade>
-      </Buttons>
-    </Wrap>
+      </div>
+    </div>
   );
 }
 
 export default Section;
 
-const Wrap = styled.div`
-  width: 100vw;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-image: ${(props) => `url(${props.bgImage})`};
-`;
-const ItemText = styled.div`
-  padding-top: 15vh;
-  text-align: center;
-  span{
-  font-size:45px;
-  font-weight:700;
-  }
-`;
-const ButtonGroup = styled.div`
-  display: flex;
-  margin-bottom: 30px;
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
-`;
-
-const LeftButton = styled.div`
-  background-color: rgba(23, 26, 32, 0.8);
-  height: 40px;
-  width: 226px;
-  display: flex;
-  color: white;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100px;
-  opacity: 0.85;
-  text-transform: uppercase;
-  font-size: 12px;
-  cursor: pointer;
-  margin: 8px;
-`;
-const RightButton = styled(LeftButton)`
-  background: white;
-  opacity: 0.65;
-  color: black;
-`;
-const DownArrow = styled.img`
-  height: 40px;
-  overflow: hidden;
-  animation: animateDown infinite 1.5s;
-`;
-const Buttons = styled.div``;

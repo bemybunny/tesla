@@ -1,54 +1,53 @@
 import React from "react";
 import Section from "./Section";
-import styled from "styled-components";
 
 function Home() {
   return (
-    <Container>
+    <div className="container1" >
        <Section 
             title="Model S"
             description="Order Online for Touchless Delivery"
-            background_image="/tesla/model-s.jpg"
+            background_image="model-s.jpg"
             leftBtnText="Custom Order"
             rightBtnText="Existing Inventory"
        />
        <Section
             title="Model Y"
             description="Order Online for Touchless Delivery"
-            background_image="/tesla/model-y.jpg"
+            background_image="model-y.jpg"
             leftBtnText="Custom Order"
             rightBtnText="Existing Inventory" />
        <Section 
             title="Model 3"
             description="Order Online for Touchless Delivery"
-            background_image="/tesla/model-3.jpg"
+            background_image="model-3.jpg"
             leftBtnText="Custom Order"
             rightBtnText="Existing Inventory"
        />
        <Section
             title="Model X"
             description="Order Online for Touchless Delivery"
-            background_image="/tesla/model-x.jpg"
+            background_image="model-x.jpg"
             leftBtnText="Custom Order"
             rightBtnText="Existing Inventory" />
        <Section
             title="Solar Pannels"
             description="Schedule a Virtual Consultation"
-            background_image="/tesla/solar-panel.jpg"
+            background_image="solar-panel.jpg"
             leftBtnText="Order Now"
             rightBtnText="Learn More"
        />
        <Section
             title="Solar Roofs"
             description="Produce Clean Energy From Your Roof"
-            background_image="/tesla/solar-roof.jpg"
+            background_image="solar-roof.jpg"
             leftBtnText="Order Now"
             rightBtnText="Learn More"
        />
         <Section
             title="Powerwall"
             description=""
-            background_image="/tesla/powerwall.webp"
+            background_image="powerwall.webp"
             leftBtnText="Order Now"
             rightBtnText="Learn More"
        />
@@ -58,12 +57,10 @@ function Home() {
             background_image="accessories.jpg"
             leftBtnText="Shop Now"
        />
-    </Container>
+    </div>
   );
 }
 
 export default Home;
 
-const Container = styled.div`
-  height: 100vh;
-`
+
