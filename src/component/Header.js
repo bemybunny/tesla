@@ -1,27 +1,26 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
 function Header() {
   const [burgerStatus, setBurgerStatus] = useState(false);
   return (
     <Container>
-      <a>
+      <div>
         <img src="/tesla/logo.svg" alt="" />
-      </a>
+      </div>
       <Menu>
-        <a href="#">Model S</a>
-        <a href="#">Model 3</a>
-        <a href="#">Model X</a>
-        <a href="#">Solar Roof</a>
-        <a href="#">Solar Panels</a>
-        <a href="#">powerWall</a>
+        <text>Model S</text>
+        <text>Model 3</text>
+        <text>Model X</text>
+        <text>Solar Roof</text>
+        <text>Solar Panels</text>
+        <text>powerWall</text>
       </Menu>
       <RightMenu>
         <RightBar>
-          <a href="#">Shop</a>
-          <a href="#">Tesla Account</a>
+          <text>Shop</text>
+          <text>Tesla Account</text>
         </RightBar>
         <CustomMenu onClick={() => setBurgerStatus(true)}>
           <span>MENU</span>
@@ -31,56 +30,29 @@ function Header() {
         <CloseWrap>
           <CustomClose onClick={() => setBurgerStatus(false)} />
         </CloseWrap>
+        <li><text>Model S</text> </li>
+        <li><text>Model 3</text> </li>
+        <li><text>Model X</text> </li>
+        <li><text>Solar Roof</text> </li>
+        <li><text>Solar Panels</text> </li>
+        <li><text>powerWall</text> </li>
         <li>
-          <a href="#">Existing Inventory</a>
+          <text>Existing Inventory</text>
         </li>
         <li>
-          <a href="#">Used Inventory</a>
+          <text>Used Inventory</text>
         </li>
         <li>
-          <a href="#">Trade-In</a>
+          <text>Trade-In</text>
         </li>
         <li>
-          <a href="#">Demo Drive</a>
+          <text>Demo Drive</text>
         </li>
         <li>
-          <a href="#">Insurance</a>
+          <text>Insurance</text>
         </li>
         <li>
-          <a href="#">Fleet</a>
-        </li>
-        <li>
-          <a href="#">Commercial Energy</a>
-        </li>
-        <li>
-          <a href="#">utilities</a>
-        </li>
-        <li>
-          <a href="#">Charging</a>
-        </li>
-        <li>
-          <a href="#">Careers</a>
-        </li>
-        <li>
-          <a href="#">Find Us</a>
-        </li>
-        <li>
-          <a href="#">Events</a>
-        </li>
-        <li>
-          <a href="#">Support</a>
-        </li>
-        <li>
-          <a href="#">Investor Relations</a>
-        </li>
-        <li>
-          <a href="#">Shop</a>
-        </li>
-        <li>
-          <a href="#">Account</a>
-        </li>
-        <li>
-          <a href="#">More</a>
+          <text>Fleet</text>
         </li>
       </BurgerNav>
     </Container>
@@ -107,13 +79,13 @@ const Menu = styled.div`
   flex: 1;
   flex-wrap: no-wrap;
   justify-content: center;
-  a {
+  text{
     font-weight: 600;
     text-transform: uppercase;
     padding: 0 20px;
     flex-wrap: no-wrap;
   }
-  a:hover {
+  text:hover {
     background-color: rgba(23, 26, 32, 0.1);
     color: black;
     padding: 10px 12px;
@@ -126,11 +98,18 @@ const Menu = styled.div`
 const RightMenu = styled.div`
   display: flex;
   align-items: center;
-  a {
+  text{
     font-weight: 600;
     text-transform: uppercase;
     margin-right: 10px;
   }
+  text:hover {
+    background-color: rgba(23, 26, 32, 0.1);
+    color: black;
+    padding: 10px 12px;
+    border-radius: 6px;
+  }
+
 `;
 const CustomMenu = styled.div`
   display: flex;
@@ -167,7 +146,7 @@ const BurgerNav = styled.div`
   li {
     padding: 15px 0;
   }
-  a {
+  text {
     font-weight: 600;
   }
 `;
